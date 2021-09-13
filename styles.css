@@ -1,0 +1,142 @@
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+
+    font-family: Red Hat Display;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-color:hsl(225, 100%, 94%);
+}
+
+.container{
+    
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.card{
+
+    background-color: white;
+    width:430px;
+    text-align: center;
+    border-radius: 13px;
+    box-shadow: 5px 10px 8px 10px hsl(225, 100%, 92%);
+}
+
+.card .img-hero{
+
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    width: 100%;
+}
+
+.card-body{
+
+    padding: 20px 50px;
+}
+
+.gray-part{
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-radius: 13px;
+    padding: 10px 25px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+
+
+.wrapper-icon{
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wrapper-icon div{
+    padding-left:10px;
+}
+
+.wrapper-icon p, h4{
+    margin: 0;
+}
+
+button{
+
+    display: block;
+    width:100%;
+    cursor:pointer;
+    padding: 15px 35px;
+    color: white;
+    background-color:  hsl(245, 75%, 52%);
+    border:none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 15px hsla(245, 75%, 52%, 0.493);;
+}
+
+button:hover, button:focus{
+
+    box-shadow: 0px 8px 15px hsla(245, 75%, 52%, 0.294);;
+}
+
+.attribution{
+
+    font-size: 13px;
+    margin: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+
+h1 {
+
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+p, .btn-dummy{
+
+    color:hsl(224, 23%, 55%);
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.btn-dummy{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+h1, p{
+    margin: 15px 0;
+}
+
+
+@media screen and (max-width:768px){
+    
+    button{
+        padding:10px 30px;
+    }
+
+    body{
+        background-image: url(./images/pattern-background-mobile.svg); 
+    }
+
+}
